@@ -27,7 +27,7 @@ Required dependency versions:
   
 You will need to clone both this repository and the FlightSurety_Dapp repository.<br/>
 
-Clone THIS repository first, then cd into the <FlightSurety-Assignment> project folder.<br/>
+Clone THIS repository first, then cd into the FlightSurety-Assignment project folder.<br/>
 
 Clone the FlightSurety_Dapp repository then cd into the <FLightSurety_Dapp> project folder and type: npm install<br/>
   
