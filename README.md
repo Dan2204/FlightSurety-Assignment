@@ -1,4 +1,8 @@
-################# Flight Surety Dapp set up instructions. #######################
+#############################<br/>
+
+Flight Surety Dapp set up instructions.<br/>
+
+<br/>
 
 The boilerplate code provided proved too painfull to get working. After sepending days trying everything 
 and anything to get it functioning, I gave up and opted to upgrade the solidity code to version 8, and
@@ -12,12 +16,12 @@ due to time restraints, I didn't spend much time on style and responsivness... D
 
 Required dependency versions:
 
-  truffle: v5.5.4, \n
-  node: v16.14.0,
-  ganache: v2.5.4,
-  npm: v8.3.1,
-  solidity: v0.8.0,
-  web3: v1.7.1
+  truffle: v5.5.4, <br/>
+  node: v16.14.0, <br/>
+  ganache: v2.5.4, <br/>
+  npm: v8.3.1, <br/>
+  solidity: v0.8.0, <br/>
+  web3: v1.7.1 <br/>
   
 You will need to clone both this repository and the FlightSurety_Dapp repository.
 
