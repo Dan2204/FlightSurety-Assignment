@@ -84,6 +84,10 @@ contract FlightSuretyApp {
         return flightSuretyData.isOperational();
     }
 
+    function getContractBalance() external requireContractOwner returns (uint) {
+      return address(this).balance;
+    }
+
     function getAppOwner() external view returns(address) {
         return contractOwner;
     }
@@ -177,7 +181,7 @@ contract FlightSuretyApp {
                     isRegistered: true,
                     statusCode: STATUS_CODE_UNKNOWN,
                     flightTime: _timeStamp,
-                    updatedTimestamp: _timeStamp,
+                    updatedTimestamp: 0,
                     airline: _airline,
                     flightNumber: _flightNumber
                 }
@@ -286,7 +290,7 @@ contract FlightSuretyApp {
 
 
     // Register an oracle with the contract
-    function registerOracle() external payable {
+    function registerOracle() external payable returns (uint) {
         // Require registration fee
         require(msg.value >= REGISTRATION_FEE, "Registration fee is required");
         require(!oracles[msg.sender].isRegistered, "Oracle is already registered");
@@ -300,16 +304,17 @@ contract FlightSuretyApp {
         oracles[msg.sender] = newOracle;
         oracleList.push(msg.sender);
         oracleCount++;
+        return oracleCount;
     }
 
     function getOracle(uint index) external view returns (address oracleAddress) {
         require(index < oracleCount, "Index out of bounds");
         return oracleList[index];
     }
-
+    
     function getMyIndexes() view external returns (uint8[3] memory) {
         require(oracles[msg.sender].isRegistered, "Not registered as an oracle");
-
+        
         return oracles[msg.sender].indexes;
     }
 

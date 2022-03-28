@@ -116,6 +116,10 @@ contract FlightSuretyData {
     /*                                       UTILITY FUNCTIONS                                  */
     /********************************************************************************************/
 
+    function getContractBalance() external requireContractOwner returns (uint) {
+      return address(this).balance;
+    }
+
     function getContractOwner() public view returns (address) {
       return contractOwner;
     }
