@@ -1,5 +1,4 @@
-#######################################
-Flight Surety Dapp set up instructions:
+################# Flight Surety Dapp set up instructions. #######################
 
 The boilerplate code provided proved too painfull to get working. After sepending days trying everything 
 and anything to get it functioning, I gave up and opted to upgrade the solidity code to version 8, and
@@ -13,7 +12,7 @@ due to time restraints, I didn't spend much time on style and responsivness... D
 
 Required dependency versions:
 
-  truffle: v5.5.4,
+  truffle: v5.5.4, \n
   node: v16.14.0,
   ganache: v2.5.4,
   npm: v8.3.1,
