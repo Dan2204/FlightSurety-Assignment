@@ -4,7 +4,7 @@ Flight Surety Dapp set up instructions.<br/>
 
 =============================<br/>
 
-The boilerplate code provided proved too painfull to get working. After sepending days trying everything 
+The boilerplate code provided was using 4 year old dependency versions and proved too painfull to get working. After sepending days trying everything 
 and anything to get it functioning, I gave up and opted to upgrade the solidity code to version 8, and
 start from scratch with the dapp. I was able to use snippets from the dapp boilerplate code, i.e. contract.js
 and the server.js starting code. Everything else was built from scratch using next.js.
