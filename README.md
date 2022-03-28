@@ -25,7 +25,7 @@ Required dependency versions:
   
 -------------------------------<br/>
   
-You will need to clone both this repository and the FlightSurety_Dapp repository.<br/>
+You will need to clone both this repository and the FlightSurety_Dapp repository (The dapp sits inside the main truffle folder).<br/>
 
 Clone THIS repository first, then cd into the FlightSurety-Assignment project folder.<br/>
 
