@@ -33,11 +33,12 @@ Clone the FlightSurety_Dapp repository, then cd into the FLightSurety_Dapp proje
   
 If you are using Ganache-ui, you won't need to change anything, but if using ganache cli, you will need to change the network address
 in truffle-config.js and 2_deploy_contracts.js (in the migrations folder)<br/>
+
 you will need a minimum of 40 accounts as 30 oracles will be generated when running the server (I was testing using 100 accounts).
 
-With ganache up and running, navigate back to the <FlightSurety-Assignment> project folder.<br/>
+With ganache up and running, navigate back to the FlightSurety-Assignment project folder.<br/>
   
 truffle compile and migrate, 4 json files should be generated, one in the server folder and 3 in the json_config folder.
   
-Open an new terminal, navigate into the <FLightSurety_Dapp> project folder and enter: npm run server<br />
+Open an new terminal, navigate into the FLightSurety_Dapp project folder and enter: npm run server<br />
 
