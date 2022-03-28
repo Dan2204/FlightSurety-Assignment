@@ -14,7 +14,7 @@ due to time restraints, I didn't spend much time on style and responsivness... D
 
 -------------------------------<br/>
 
-Required dependency versions:
+Required versions:
 
   truffle: v5.5.4, <br/>
   node: v16.14.0, <br/>
