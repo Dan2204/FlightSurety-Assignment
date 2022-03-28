@@ -38,7 +38,38 @@ you will need a minimum of 40 accounts as 30 oracles will be generated when runn
 
 With ganache up and running, navigate back to the FlightSurety-Assignment project folder.<br/>
   
-truffle compile and migrate, 4 json files should be generated, one in the server folder and 3 in the json_config folder.
+Truffle compile and migrate, 4 .json files should be generated, one in the server folder and 3 in the json_config folder.
   
-Open an new terminal, navigate into the FLightSurety_Dapp project folder and enter: npm run server<br />
+Open an new terminal, navigate into the FLightSurety_Dapp project folder and enter: npm run server. The server launches on localhost:8000<br />
+
+The server boots up and generates 30 oracles... This is where you 'may' find, due to an issue with ganache, the generateOracle call reverts
+before all oracles are generated. This only happens when you load a fresh instance of ganache... Type truffle migrate --reset then restart the server... you may need to do this several times before it generates all 30. Once it has generated them all once, it will generate them every time (till you start a fresh instance of ganache).
+
+I've noticed a few people in the Udacity Knowledge section have had the same issue but there wasn't a solution advised at all.
+
+Once the server has generated the oracles, it will then sit and wait for event calls.
+
+Open a new terminal, navigate into the FlightSurety_Dapp project folder and type: npm run dapp. The next app will launch on localhost: 3000.
+
+=============================<br />
+
+Working the Dapp
+
+=============================<br />
+
+The app will initialize on start. It checks for registered oracles. These are listed on the right and are there for display purposes.
+
+The idea with the app is to select an address from the lefthand sidebar. It is divided into registered airlines, passengers and free accounts.
+
+When submitting for a flight update, the flight will only dissapear if the update time has passed the flight time, at which point the flight closes.
+
+If the flight closed 'late: airline', the passenger will stay in the passenger box until the owed insurance ether has been claimed.
+
+Once 4 airlines are registered and paid up their 10 ether, they can add a new airline, and participate in registration consensus.
+
+=================================<br />
+
+
+
+
 
