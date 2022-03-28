@@ -29,7 +29,7 @@ You will need to clone both this repository and the FlightSurety_Dapp repository
 
 Clone THIS repository first, then cd into the FlightSurety-Assignment project folder.<br/>
 
-Clone the FlightSurety_Dapp repository then cd into the <FLightSurety_Dapp> project folder and type: npm install<br/>
+Clone the FlightSurety_Dapp repository, then cd into the FLightSurety_Dapp project folder and type: npm install<br/>
   
 If you are using Ganache-ui, you won't need to change anything, but if using ganache cli, you will need to change the network
 in truffle-config.js and 2_deploy_contracts.js (in the migrations folder)<br/>
