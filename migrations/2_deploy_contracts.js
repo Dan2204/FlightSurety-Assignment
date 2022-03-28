@@ -1,7 +1,7 @@
 const FlightSuretyApp = artifacts.require('FlightSuretyApp');
 const FlightSuretyData = artifacts.require('FlightSuretyData');
 const fs = require('fs');
-const root = '/../flightsurety_app/pages/';
+const root = '/../FlightSurety_Dapp/pages/';
 
 module.exports = function (deployer) {
   deployer.deploy(FlightSuretyData).then(() => {
@@ -25,13 +25,13 @@ module.exports = function (deployer) {
         JSON.stringify(config, null, '\t'),
         'utf-8'
       );
-      // WRITE FSD ABI TO PAGES/JSON_CONFIG //
+      // WRITE FSData ABI TO PAGES/JSON_CONFIG //
       fs.writeFileSync(
         __dirname + root + 'json_config/fsData_ABI.json',
         JSON.stringify(FlightSuretyData.abi, null, '\t'),
         'utf-8'
       );
-      // WRITE FSA ABI TO PAGES/JSON_CONFIG //
+      // WRITE FSApp ABI TO PAGES/JSON_CONFIG //
       fs.writeFileSync(
         __dirname + root + 'json_config/fsApp_ABI.json',
         JSON.stringify(FlightSuretyApp.abi, null, '\t'),
